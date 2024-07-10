@@ -3,6 +3,8 @@
 
 This project focuses on classifying human activities using data collected from smartphone sensors. The main components are data preprocessing, feature analysis, model training, and evaluation. The project includes scripts for data preparation, model training, and a Streamlit dashboard for model evaluation.
 
+`dataset`: https://www.kaggle.com/datasets/uciml/human-activity-recognition-with-smartphones
+
 ## Project Structure
 
 - `train.py`: Script for data preprocessing, feature analysis, and model training.
