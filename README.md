@@ -1,4 +1,3 @@
-
 # Human Activity Recognition Project
 
 This project focuses on classifying human activities using data collected from smartphone sensors. The main components are data preprocessing, feature analysis, model training, and evaluation. The project includes scripts for data preparation, model training, and a Streamlit dashboard for model evaluation.
@@ -25,9 +24,9 @@ Ensure you have the following libraries installed:
 
 Install the required packages using:
 
-\`\`\`bash
+```bash
 pip install pandas numpy plotly scikit-learn torch streamlit
-\`\`\`
+```
 
 ### Data
 
@@ -39,7 +38,7 @@ The dataset is expected to be in the `data/` directory with the following files:
 
 ### Description
 
-\`train.py\` handles the following tasks:
+`train.py` handles the following tasks:
 1. **Load and Inspect Data**: Load training and test datasets, and perform basic data inspection.
 2. **Data Cleaning**: Check for duplicates and missing values.
 3. **Exploratory Data Analysis**: Generate visualizations for activity distribution and feature analysis.
@@ -50,9 +49,9 @@ The dataset is expected to be in the `data/` directory with the following files:
 
 Run the script using:
 
-\`\`\`bash
+```bash
 python train.py
-\`\`\`
+```
 
 ### Key Functions
 
@@ -66,7 +65,7 @@ python train.py
 
 ### Description
 
-\`app.py\` is a Streamlit app for evaluating the trained model and visualizing test set results. It includes:
+`app.py` is a Streamlit app for evaluating the trained model and visualizing test set results. It includes:
 1. **Model Evaluation**: Evaluate the model on the test set and display loss and accuracy.
 2. **Activity Distribution**: Visualize the distribution of activities in the test set.
 3. **Individual Instance Evaluation**: Select and evaluate individual instances from the test set.
@@ -76,9 +75,9 @@ python train.py
 
 Run the app using:
 
-\`\`\`bash
+```bash
 streamlit run app.py
-\`\`\`
+```
 
 ### Key Features
 
@@ -89,7 +88,7 @@ streamlit run app.py
 
 ## Directory Structure
 
-\`\`\`
+```
 .
 ├── data/
 │   ├── train.csv
@@ -97,13 +96,24 @@ streamlit run app.py
 ├── train.py
 ├── app.py
 └── README.md
-\`\`\`
+```
 
 ## Notes
 
-- Ensure the dataset files are in the \`data/\` directory.
-- The trained model and scaler should be saved as \`model.pth\` and \`scaler.pkl\` respectively for use in the Streamlit app.
+- Ensure the dataset files are in the `data/` directory.
+- The trained model and scaler should be saved as `model.pth` and `scaler.pkl` respectively for use in the Streamlit app.
 
 ## Acknowledgments
 
 This project uses the Human Activity Recognition dataset.
+
+## Screenshots
+
+### Test Set Evaluation Dashboard
+![Test Set Evaluation Dashboard](https://github.com/oktaykurt/Human-Activity-Recognition/blob/main/Streamlit%20-%20Test%20Set%20Summary.png)
+
+### Evaluate Individual Test Instance
+![Evaluate Individual Test Instance](https://github.com/oktaykurt/Human-Activity-Recognition/blob/main/Streamlit%20-%20Evaluate%20Individual%20Test%20Instance.png)
+
+### Feature Exploration
+![Feature Exploration](https://github.com/oktaykurt/Human-Activity-Recognition/blob/main/Streamlit%20-%20Feature%20Exploration.png)
